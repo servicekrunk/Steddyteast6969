@@ -2,106 +2,135 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5-Star Plumbers in Spring, TX | Steddy Plumbing, LLC</title>
     
-    <!-- Original Live Stylesheets -->
-    <link rel="stylesheet" href="https://www.steddyplumbing.com/wp-content/themes/twentytwentyone/style.css">
-    <link rel="stylesheet" href="https://www.steddyplumbing.com/wp-content/plugins/elementor/assets/css/frontend.min.css">
-    <link rel="stylesheet" href="https://www.steddyplumbing.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css">
-    <link rel="stylesheet" href="https://www.steddyplumbing.com/wp-content/uploads/elementor/css/post-5.css">
-    <link rel="stylesheet" href="https://www.steddyplumbing.com/wp-content/uploads/elementor/css/post-13.css">
-    <link rel="stylesheet" href="https://www.steddyplumbing.com/wp-content/uploads/elementor/css/post-35.css">
-    <link rel="stylesheet" href="https://www.steddyplumbing.com/wp-content/uploads/elementor/css/post-244.css">
+    <!-- Master Stylesheet & Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body class="home wp-singular page-template page-template-elementor_header_footer page page-id-13 custom-background wp-embed-responsive wp-theme-twentytwentyone is-light-theme has-background-white elementor-default elementor-template-full-width">
+<body>
 
-    <!-- HEADER SECTION -->
-    <header data-elementor-type="header" data-elementor-id="35" class="elementor elementor-35 elementor-location-header">
-        <section class="elementor-section elementor-top-section elementor-section-boxed">
-            <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-50 elementor-top-column">
-                    <div class="elementor-widget-wrap"></div>
-                </div>
-                <div class="elementor-column elementor-col-50 elementor-top-column">
-                    <div class="elementor-widget-wrap">
-                        <div class="elementor-widget elementor-widget-icon-list">
-                            <div class="elementor-widget-container">
-                                <ul class="elementor-icon-list-items elementor-inline-items">
-                                    <li class="elementor-icon-list-item elementor-inline-item">
-                                        <a href="mailto:freddy@steddyplumbing.com">
-                                            <span class="elementor-icon-list-icon"><i class="fas fa-envelope"></i></span>
-                                            <span class="elementor-icon-list-text">freddy@steddyplumbing.com</span>
-                                        </a>
-                                    </li>
-                                    <li class="elementor-icon-list-item elementor-inline-item">
-                                        <a href="tel:2819184077">
-                                            <span class="elementor-icon-list-icon"><i class="fas fa-mobile-alt"></i></span>
-                                            <span class="elementor-icon-list-text">281-918-4077</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container top-bar-flex">
+            <div>📍 Spring, TX & Surrounding Areas | License: RMP 37946</div>
+            <div class="top-contacts">
+                <a href="mailto:freddy@steddyplumbing.com"><i class="fas fa-envelope"></i> freddy@steddyplumbing.com</a>
+                <a href="tel:2819184077"><i class="fas fa-phone-alt"></i> (281) 918-4077</a>
             </div>
-        </section>
+        </div>
+    </div>
 
-        <section class="elementor-section elementor-top-section elementor-section-boxed" style="position: sticky; top: 0; z-index: 999; background: #fff;">
-            <div class="elementor-container elementor-column-gap-default" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 0;">
-                <div class="elementor-column">
-                    <a href="index.html">
-                        <img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/cropped-logo.png" alt="Steddy Plumbing Logo" style="max-height: 60px;">
-                    </a>
-                </div>
-                <div class="elementor-column">
-                    <nav class="elementor-nav-menu--main">
-                        <ul class="elementor-nav-menu" style="list-style: none; display: flex; gap: 20px; align-items: center; margin: 0;">
-                            <li><a href="index.html" class="elementor-item elementor-item-active">Home</a></li>
-                            <li><a href="about.html" class="elementor-item">About</a></li>
-                            <li><a href="services.html" class="elementor-item">Services</a></li>
-                            <li><a href="contact.html" class="elementor-item">Contact</a></li>
+    <!-- MAIN NAVIGATION & HEADER -->
+    <header class="main-header">
+        <div class="container nav-flex">
+            <a href="index.html">
+                <img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/cropped-logo.png" alt="Steddy Plumbing, LLC in Spring, TX | Logo" class="brand-logo">
+            </a>
+
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav>
+                <ul class="nav-links" id="nav-menu-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="services.html">Drain Cleaning</a></li>
+                            <li><a href="services.html">Water Heater</a></li>
+                            <li><a href="services.html">Tankless Water Heater</a></li>
+                            <li><a href="services.html">Water Treatment</a></li>
+                            <li><a href="services.html">Sewer Line Repair & Replacement</a></li>
+                            <li><a href="services.html">Gas Line Repair & Replacement</a></li>
+                            <li><a href="services.html">Residential Plumbing</a></li>
+                            <li><a href="services.html">Sewer Camera Inspection</a></li>
+                            <li><a href="services.html">Toilets, sinks, faucets & more</a></li>
+                            <li><a href="services.html">Water Line Repair & Replacement</a></li>
                         </ul>
-                    </nav>
-                </div>
-                <div class="elementor-column">
-                    <a class="elementor-button elementor-size-sm" href="contact.html" style="background: #e63946; color: #fff; padding: 10px 20px; border-radius: 4px; font-weight: bold;">FREE ESTIMATES</a>
-                </div>
-            </div>
-        </section>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="btn-estimate">FREE ESTIMATES</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="elementor-section elementor-top-section" style="background: linear-gradient(rgba(11,28,63,0.7), rgba(11,28,63,0.7)), url('https://www.steddyplumbing.com/wp-content/uploads/2022/01/Group-560.png') center/cover; color: #fff; text-align: center; padding: 100px 20px;">
-        <div class="elementor-container">
-            <h2 style="font-size: 32px; margin-bottom: 10px;">Steddy Plumbing LLC</h2>
-            <h1 style="font-size: 42px; font-weight: 800; margin-bottom: 25px;">Steady Service. Solid Solutions. That’s Steddy Plumbing!</h1>
-            <a href="tel:2819184077" class="elementor-button" style="background: #e63946; color: #fff; padding: 15px 30px; font-size: 18px; font-weight: bold; border-radius: 4px; display: inline-block;">CALL FOR A SERVICE</a>
+    <section class="hero-section">
+        <div class="container hero-content">
+            <p class="hero-sub">Steddy Plumbing LLC</p>
+            <h1>Steady Service. Solid Solutions. That’s Steddy Plumbing!</h1>
+            <a href="tel:2819184077" class="btn-red">CALL FOR A SERVICE</a>
         </div>
     </section>
 
     <!-- INTRO SECTION -->
-    <section style="background-color: #0b1c3f; color: #fff; padding: 60px 20px; text-align: center;">
-        <div style="max-width: 900px; margin: 0 auto;">
-            <h2 style="font-size: 30px; margin-bottom: 20px; color: #fff;">Local, Affordable Plumbers in Spring, TX and Surrounding Areas</h2>
-            <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;">
-                Looking for a Plumber in Spring, TX and the nearby areas? We service The Woodlands, Houston, Conroe, Tomball and Cypress all in the Great State of Texas! Look no further than <strong>Steddy Plumbing LLC</strong>! We are a family-owned and operated plumbing company that is dedicated to providing top quality plumbing solutions at a competitive price. We’ve been proudly serving our neighborhoods since 2018.
-            </p>
-            <p style="font-size: 18px; line-height: 1.8;">
-                We are fully licensed in the State of Texas and well insured for your protection and safety. There isn’t a plumbing job too big or too small for our team to handle. From repairs and repiping to water filtration, <strong>Steddy Plumbing LLC</strong> has the experts to get the job done quickly and right the first time.
-            </p>
+    <section class="intro-section">
+        <div class="container intro-container">
+            <h2>Local, Affordable Plumbers in Spring, TX and Surrounding Areas</h2>
+            <p>Looking for a Plumber in Spring, TX and the nearby areas? We service The Woodlands, Houston, Conroe, Tomball and Cypress all in the Great State of Texas! Look no further than <strong>Steddy Plumbing LLC</strong>! We are a family-owned and operated plumbing company that is dedicated to providing top quality plumbing solutions at a competitive price. We’ve been proudly serving our neighborhoods since 2018.</p>
+            <p>We are fully licensed in the State of Texas and well insured for your protection and safety. There isn’t a plumbing job too big or too small for our team to handle. From repairs and repiping to water filtration. <strong>Steddy Plumbing LLC</strong> has the experts to get the job done quickly and right the first time. If a plumbing issue is disrupting your day to day life, call on our team today!</p>
         </div>
     </section>
 
-    <!-- COUPONS SECTION -->
-    <section style="padding: 60px 20px; background: #fff; text-align: center;">
-        <div class="elementor-container">
-            <h2 style="color: #0b1c3f; font-size: 32px; margin-bottom: 10px;">OUR COUPONS</h2>
-            <p style="color: #666; margin-bottom: 40px;">It is important that we give you options that are available so that you can make an informed decision.</p>
+    <!-- WHY CHOOSE US -->
+    <section class="why-section">
+        <div class="container why-grid">
+            <h2 class="why-title">Why Choose Steddy Plumbing Spring TX</h2>
+            <div class="why-card">
+                <h3>100%</h3>
+                <p>Customer Satisfaction Guarantee</p>
+            </div>
+            <div class="why-card">
+                <h3>Quality Service</h3>
+                <p>Since 2018</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES HEADER & GRID -->
+    <section class="services-wrapper">
+        <div class="container text-center">
+            <span class="section-tag">OUR SERVICES</span>
+            <p class="section-desc">Our goal is to provide first-class service to every client in the most efficient manner possible.</p>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto;">
+            <div class="services-grid">
+                <div class="service-box"><a href="services.html">Drain<br>Cleaning</a></div>
+                <div class="service-box"><a href="services.html">Water<br>Heater</a></div>
+                <div class="service-box"><a href="services.html">Tankless<br>Water Heater</a></div>
+                <div class="service-box"><a href="services.html">Water<br>Treatment</a></div>
+                <div class="service-box"><a href="services.html">Residential<br>Plumbing</a></div>
+                <div class="service-box"><a href="services.html">Sewer Camera<br>Inspection</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TAILOR FIT SOLUTIONS -->
+    <section class="tailor-section">
+        <div class="container tailor-grid">
+            <div>
+                <img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/Group-555.png" alt="Plumbing BG2">
+            </div>
+            <div>
+                <h2>Tailor-Fit Plumbing Solutions From Trusted Local Spring TX Plumbers</h2>
+                <h4 class="sub-headline">Whether you have a leaky faucet</h4>
+                <p>When you call <strong>Steddy Plumbing</strong>, we will come out and evaluate the whole situation and communicate with you. Communication is key and good communication includes great listening. We promise to listen to what your needs are and discuss options that are available to meet your needs. It is important that we give you options that are available so that you can make an informed decision. Other companies will tell you what THEY want done; we feel it should be your choice to decide what is best for your home.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COUPONS -->
+    <section class="coupon-section">
+        <div class="container text-center">
+            <span class="section-tag">OUR COUPONS</span>
+            <p class="coupon-subtitle">It is important that we give you options that are available so that you can make an informed decision.</p>
+            
+            <div class="coupon-grid">
                 <a href="tel:2819184077"><img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/coupons-1.png" alt="Coupon"></a>
                 <a href="tel:2819184077"><img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/coupons-10.png" alt="Coupon"></a>
                 <a href="tel:2819184077"><img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/coupons-9.png" alt="Coupon"></a>
@@ -112,33 +141,95 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer style="background-color: #0b1c3f; color: #fff; padding: 60px 20px 20px 20px;">
-        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
+    <!-- EXPECTATIONS -->
+    <section class="expectations-section">
+        <div class="container expectations-grid">
             <div>
-                <img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/f47369d6-a2ab-46c4-be54-1a99d7d4155a-1024x318.png" alt="Logo" style="max-height: 50px; margin-bottom: 15px;">
-                <p>LICENSE NUMBER: RMP 37946</p>
-                <p>📞 (281) 918-4077</p>
-                <p>✉️ freddy@steddyplumbing.com</p>
+                <span class="section-tag-light">We Meet and Exceed Our Customers’ Expectations</span>
+                <h2>At Steddy Plumbing LLC, we love what we do,</h2>
+                <p>which is why we always strive to go above and beyond our customer’s expectations. We take great pride in doing quality work for all of our customers. We are about taking care of your plumbing needs in a prompt and professional manner. We combine our use of the highest quality parts and equipment, and our dedication to delivering exceptional work to provide you with satisfactory service. We service and repair most brands of equipment, so you can trust us to perform a professional Plumber job. We stand behind our work with a 100% satisfaction guarantee, which means we are not happy until you are fully satisfied with the results.</p>
             </div>
             <div>
-                <h4 style="color: #00A8E7; margin-bottom: 15px;">QUICK LINKS</h4>
-                <ul style="list-style: none; padding: 0; line-height: 2;">
-                    <li><a href="index.html" style="color: #ccc;">Home</a></li>
-                    <li><a href="about.html" style="color: #ccc;">About Us</a></li>
-                    <li><a href="services.html" style="color: #ccc;">Our Services</a></li>
-                    <li><a href="contact.html" style="color: #ccc;">Contact Us</a></li>
+                <img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/Group-560.png" alt="Plumbing BG1">
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonial-section">
+        <div class="container testimonial-grid">
+            <div>
+                <span class="section-tag">CLIENT<br>TESTIMONIALS</span>
+                <p>We stand behind our work with a 100% satisfaction guarantee. We won’t rest until you are happy with the results.</p>
+            </div>
+            <div class="testimonial-box-wrapper">
+                <div class="testimonial-card active">
+                    <p>I am so thankful for Freddy Hall with Steddy Plumbing. On the infamous 2.15.2021 Texas freeze, my outside faucet burst. Water was gushing for over 3 hours. I called over 10 plumbers in the Spring, TX area. He was first one to answer phone and said he could be here in about an hour. He was able to fix the faucet and was done within 30”. A big THANK YOU, Freddy!! I have found my plumber for life. 😊</p>
+                    <strong>⭐⭐⭐⭐⭐<br>Beverly H.</strong> <span>Google Reviews</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>Freddy was great on time and worked his butt off in a hot attic all day to change out 2 water heaters. Came in and gave a good quote for replacement heaters with out making me feel like he was trying to take advantage of me. Would recommend him to others and is mos def my plumber going forward</p>
+                    <strong>⭐⭐⭐⭐⭐<br>David W.</strong> <span>Google Reviews</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>Freddy was very nice. He charged a fair price to remove an old and install a new kitchen faucet. He did not try to up-sale services that weren't needed. Explained everything. I would say excellent customer service and workmanship. I definitely won't hesitate to call him again and will recommend Steady Plumbing to friends.</p>
+                    <strong>⭐⭐⭐⭐⭐<br>Tracy M.</strong> <span>Google Reviews</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>How refreshing to have a company communicate well, be on time, and provide a great value! I’m super impressed and this is now our go-to guy!</p>
+                    <strong>⭐⭐⭐⭐⭐<br>Rhonda E.</strong> <span>Google Reviews</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL BAR -->
+    <div class="social-bar">
+        <div class="container social-flex">
+            <a href="https://www.google.com/maps..." target="_blank"><img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/Group-87.png" alt="Google"></a>
+            <a href="https://www.facebook.com/Steddyplumbing" target="_blank"><img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/steddy_plumbing/" target="_blank"><img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/72-722799_instagram-button-follow-us-on-instagram-logo-png.png" alt="Instagram"></a>
+            <a href="https://www.thumbtack.com..." target="_blank"><img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/thumbtack.png" alt="Thumbtack"></a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <h2>Steady Service. Solid Solutions.<br>That’s Steddy Plumbing!</h2>
+            <a href="tel:2819184077" class="btn-red">CALL US NOW</a>
+        </div>
+        <div class="container footer-columns">
+            <div>
+                <img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/f47369d6-a2ab-46c4-be54-1a99d7d4155a-1024x318.png" alt="Logo" class="footer-logo">
+                <p>LICENSE NUMBER: RMP 37946</p>
+                <p><i class="fas fa-phone-alt"></i> (281) 918-4077</p>
+                <p><i class="fas fa-envelope"></i> freddy@steddyplumbing.com</p>
+            </div>
+            <div>
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div>
-                <p>21522 Glenbranch Dr, Spring, 77388</p>
+                <p><b>21522 Glenbranch Dr</b></p>
+                <p>Spring, 77388 Texas</p>
+                <p>Hours: Mon - Fri: 8:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
                 <p>© 2026 Steddy Plumbing, LLC | All Rights Reserved</p>
+                <p>Privacy Policy | Site By Strictly Plumbers</p>
             </div>
         </div>
     </footer>
 
-    <!-- Elementor & jQuery Scripts -->
-    <script src="https://www.steddyplumbing.com/wp-includes/js/jquery/jquery.min.js"></script>
-    <script src="https://www.steddyplumbing.com/wp-content/plugins/elementor/assets/js/frontend.min.js"></script>
+    <!-- Master Script -->
+    <script src="script.js"></script>
 </body>
 </html>
