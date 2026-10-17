@@ -1,109 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Steddy Plumbing, LLC</title>
+    
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 
-    <div class="top-header">
-        <div>📍 Serving Spring, TX & Surrounding Areas | License: RMP 37946</div>
-        <div class="top-header-right">
-            <span>✉️ freddy@steddyplumbing.com</span>
-            <span>📞 <a href="tel:2819184077">(281) 918-4077</a></span>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container top-bar-flex">
+            <div>📍 Spring, TX & Surrounding Areas | License: RMP 37946</div>
+            <div class="top-contacts">
+                <a href="mailto:freddy@steddyplumbing.com"><i class="fas fa-envelope"></i> freddy@steddyplumbing.com</a>
+                <a href="tel:2819184077"><i class="fas fa-phone-alt"></i> (281) 918-4077</a>
+            </div>
         </div>
     </div>
 
-    <header class="main-nav">
-        <div class="nav-container">
-            <a href="index.html" class="site-logo">
-                <img src="https://www.steddyplumbing.com/images/Steddy-Plumbing-LLC-in-Spring-TX-Logo.png" alt="Steddy Plumbing LLC Logo">
+    <!-- MAIN NAVIGATION -->
+    <header class="main-header">
+        <div class="container nav-flex">
+            <a href="index.html">
+                <img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/cropped-logo.png" alt="Steddy Plumbing, LLC Logo" class="brand-logo">
             </a>
 
-            <div class="hamburger" id="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
 
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="has-dropdown" id="services-dropdown">
-                    <a href="services.html" class="active">Services ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="services.html">Drain Cleaning</a></li>
-                        <li><a href="services.html">Water Heater</a></li>
-                        <li><a href="services.html">Tankless Water Heater</a></li>
-                        <li><a href="services.html">Water Treatment</a></li>
-                        <li><a href="services.html">Sewer Line Repair & Replacement</a></li>
-                        <li><a href="services.html">Gas Line Repair & Replacement</a></li>
-                        <li><a href="services.html">Residential Plumbing</a></li>
-                        <li><a href="services.html">Sewer Camera Inspection</a></li>
-                        <li><a href="services.html">Toilets, Sinks & Faucets</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="tel:2819184077" class="header-btn">Free Estimates</a></li>
-            </ul>
+            <nav>
+                <ul class="nav-links" id="nav-menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="active">Services <i class="fas fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="services.html">Drain Cleaning</a></li>
+                            <li><a href="services.html">Water Heater</a></li>
+                            <li><a href="services.html">Tankless Water Heater</a></li>
+                            <li><a href="services.html">Water Treatment</a></li>
+                            <li><a href="services.html">Sewer Line Repair & Replacement</a></li>
+                            <li><a href="services.html">Gas Line Repair & Replacement</a></li>
+                            <li><a href="services.html">Residential Plumbing</a></li>
+                            <li><a href="services.html">Sewer Camera Inspection</a></li>
+                            <li><a href="services.html">Toilets, sinks, faucets & more</a></li>
+                            <li><a href="services.html">Water Line Repair & Replacement</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="btn-estimate">FREE ESTIMATES</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="section">
-        <h2 class="section-title">Our Plumbing Services</h2>
-        <p class="section-subtitle">First-class service delivered efficiently to every client in Spring, TX.</p>
-        
-        <div class="services-grid">
-            <div class="service-box">
-                <h3>Drain Cleaning</h3>
-                <p>Complete clearing of grease, roots, and blockages from drains and main lines.</p>
-            </div>
-            <div class="service-box">
-                <h3>Water Heater</h3>
-                <p>Diagnostic repair, maintenance, and new installations for traditional tank water heaters.</p>
-            </div>
-            <div class="service-box">
-                <h3>Tankless Water Heater</h3>
-                <p>On-demand endless hot water system installations and yearly maintenance.</p>
-            </div>
-            <div class="service-box">
-                <h3>Water Treatment</h3>
-                <p>Whole-house filtration and water softening solutions tailored to Texas water conditions.</p>
-            </div>
-            <div class="service-box">
-                <h3>Sewer Line Repair & Replacement</h3>
-                <p>Trench and pipe repair solutions for broken, leaking, or crushed sewer lines.</p>
-            </div>
-            <div class="service-box">
-                <h3>Gas Line Repair & Replacement</h3>
-                <p>Certified gas line leak detection, emergency repairs, and new gas appliance hookups.</p>
-            </div>
-            <div class="service-box">
-                <h3>Residential Plumbing</h3>
-                <p>Comprehensive home plumbing care for emergency leaks, repiping, and routine maintenance.</p>
-            </div>
-            <div class="service-box">
-                <h3>Sewer Camera Inspection</h3>
-                <p>In-line video camera inspections to accurately detect blockages without digging.</p>
-            </div>
-            <div class="service-box">
-                <h3>Toilets, Sinks & Faucets</h3>
-                <p>Fast fixture replacements, rebuilds, and leak repairs for kitchens and bathrooms.</p>
+    <!-- PAGE CONTENT -->
+    <section class="section-padding" style="background: #fff;">
+        <div class="container text-center">
+            <span class="section-tag">OUR SERVICES</span>
+            <p class="section-desc">Our goal is to provide first-class service to every client in the most efficient manner possible.</p>
+            
+            <div class="services-grid" style="margin-top: 30px;">
+                <div class="service-box"><a href="tel:2819184077">Drain<br>Cleaning</a></div>
+                <div class="service-box"><a href="tel:2819184077">Water<br>Heater</a></div>
+                <div class="service-box"><a href="tel:2819184077">Tankless<br>Water Heater</a></div>
+                <div class="service-box"><a href="tel:2819184077">Water<br>Treatment</a></div>
+                <div class="service-box"><a href="tel:2819184077">Sewer Line Repair & Replacement</a></div>
+                <div class="service-box"><a href="tel:2819184077">Gas Line Repair & Replacement</a></div>
+                <div class="service-box"><a href="tel:2819184077">Residential<br>Plumbing</a></div>
+                <div class="service-box"><a href="tel:2819184077">Sewer Camera<br>Inspection</a></div>
+                <div class="service-box"><a href="tel:2819184077">Toilets, Sinks, Faucets & More</a></div>
+                <div class="service-box"><a href="tel:2819184077">Water Line Repair & Replacement</a></div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-col">
-                <img src="https://www.steddyplumbing.com/images/Steddy-Plumbing-LLC-in-Spring-TX-Top-Family-Plumbing-Logo1.png" alt="Steddy Plumbing Footer Logo" style="max-height: 50px; margin-bottom: 15px;">
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <h2>Steady Service. Solid Solutions.<br>That’s Steddy Plumbing!</h2>
+            <a href="tel:2819184077" class="btn-red">CALL US NOW</a>
+        </div>
+        <div class="container footer-columns">
+            <div>
+                <img src="https://www.steddyplumbing.com/wp-content/uploads/2022/01/f47369d6-a2ab-46c4-be54-1a99d7d4155a-1024x318.png" alt="Logo" class="footer-logo">
                 <p>LICENSE NUMBER: RMP 37946</p>
+                <p><i class="fas fa-phone-alt"></i> (281) 918-4077</p>
+                <p><i class="fas fa-envelope"></i> freddy@steddyplumbing.com</p>
             </div>
-            <div class="footer-col">
-                <h4>Quick Links</h4>
+            <div>
+                <h4>QUICK LINKS</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -111,31 +102,20 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
-                <h4>Contact Info</h4>
-                <p>📞 (281) 918-4077</p>
-                <p>✉️ freddy@steddyplumbing.com</p>
+            <div>
+                <p><b>21522 Glenbranch Dr</b></p>
+                <p>Spring, 77388 Texas</p>
+                <p>Hours: Mon - Fri: 8:00 AM - 6:00 PM</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Steddy Plumbing, LLC | All Rights Reserved</p>
+            <div class="container footer-bottom-flex">
+                <p>© 2026 Steddy Plumbing, LLC | All Rights Reserved</p>
+                <p>Privacy Policy | Site By Strictly Plumbers</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        const hamburger = document.getElementById('hamburger-menu');
-        const navLinks = document.getElementById('nav-links');
-        const servicesDropdown = document.getElementById('services-dropdown');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        servicesDropdown.addEventListener('click', (e) => {
-            if (window.innerWidth <= 900) {
-                servicesDropdown.classList.toggle('active');
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
