@@ -5,46 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Steddy Plumbing, LLC</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="top-bar">
-        <span>📍 Spring, TX & Surrounding Areas | RMP 37946</span>
-        <span>📞 Call Us: <a href="tel:2819184077">(281) 918-4077</a></span>
+    <div class="top-header">
+        <div>📍 Serving Spring, TX & Surrounding Areas | License: RMP 37946</div>
+        <div class="top-header-right">
+            <span>✉️ freddy@steddyplumbing.com</span>
+            <span>📞 <a href="tel:2819184077">(281) 918-4077</a></span>
+        </div>
     </div>
 
-    <header>
+    <header class="main-nav">
         <div class="nav-container">
-            <div class="logo">Steddy<span>Plumbing</span></div>
-            <ul class="nav-links">
+            <a href="index.html" class="site-logo">
+                <img src="https://www.steddyplumbing.com/images/Steddy-Plumbing-LLC-in-Spring-TX-Logo.png" alt="Steddy Plumbing LLC Logo">
+            </a>
+
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-dropdown" id="services-dropdown">
+                    <a href="services.html">Services ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">Drain Cleaning</a></li>
+                        <li><a href="services.html">Water Heater</a></li>
+                        <li><a href="services.html">Tankless Water Heater</a></li>
+                        <li><a href="services.html">Water Treatment</a></li>
+                        <li><a href="services.html">Sewer Line Repair & Replacement</a></li>
+                        <li><a href="services.html">Gas Line Repair & Replacement</a></li>
+                        <li><a href="services.html">Residential Plumbing</a></li>
+                        <li><a href="services.html">Sewer Camera Inspection</a></li>
+                        <li><a href="services.html">Toilets, Sinks & Faucets</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="tel:2819184077" class="header-btn">Free Estimates</a></li>
             </ul>
         </div>
     </header>
 
-    <div class="container">
-        <h2 class="section-title">Get In Touch With Us</h2>
-        <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); max-width: 700px; margin: 0 auto; text-align: center;">
-            <p style="font-size: 18px; margin-bottom: 20px;">Need a dependable plumber? Give us a call or send us an email today!</p>
+    <section class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div style="background: #ffffff; padding: 40px; border-radius: 8px; border: 1px solid #e1e8ed; max-width: 600px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 18px; margin-bottom: 25px; color: #0b1c3f; font-weight: 600;">Reach out directly for immediate plumbing assistance or quotes!</p>
             
-            <p style="margin-bottom: 10px; font-size: 16px;"><strong>Phone:</strong> <a href="tel:2819184077" style="color: #e74c3c;">(281) 918-4077</a></p>
-            <p style="margin-bottom: 10px; font-size: 16px;"><strong>Email:</strong> freddy@steddyplumbing.com</p>
-            <p style="margin-bottom: 20px; font-size: 16px;"><strong>Address:</strong> 21522 Glenbranch Dr, Spring, TX 77388</p>
+            <p style="margin-bottom: 12px; font-size: 16px;"><strong>Phone:</strong> <a href="tel:2819184077" style="color: #00a8ff; font-weight: bold;">(281) 918-4077</a></p>
+            <p style="margin-bottom: 12px; font-size: 16px;"><strong>Email:</strong> freddy@steddyplumbing.com</p>
+            <p style="margin-bottom: 25px; font-size: 16px;"><strong>Address:</strong> 21522 Glenbranch Dr, Spring, TX 77388</p>
             
-            <div style="margin-top: 30px;">
-                <a href="tel:2819184077" class="btn">Call Now For Service</a>
-            </div>
+            <a href="tel:2819184077" class="btn-primary">Call Us Now</a>
         </div>
-    </div>
+    </section>
 
     <footer>
-        <div class="footer-content">
+        <div class="footer-container">
             <div class="footer-col">
-                <h4>Steddy Plumbing, LLC</h4>
-                <p>License Number: RMP 37946</p>
+                <img src="https://www.steddyplumbing.com/images/Steddy-Plumbing-LLC-in-Spring-TX-Top-Family-Plumbing-Logo1.png" alt="Steddy Plumbing Footer Logo" style="max-height: 50px; margin-bottom: 15px;">
+                <p>LICENSE NUMBER: RMP 37946</p>
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
@@ -57,8 +82,8 @@
             </div>
             <div class="footer-col">
                 <h4>Contact Info</h4>
-                <p>Phone: (281) 918-4077</p>
-                <p>Email: freddy@steddyplumbing.com</p>
+                <p>📞 (281) 918-4077</p>
+                <p>✉️ freddy@steddyplumbing.com</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -66,5 +91,20 @@
         </div>
     </footer>
 
+    <script>
+        const hamburger = document.getElementById('hamburger-menu');
+        const navLinks = document.getElementById('nav-links');
+        const servicesDropdown = document.getElementById('services-dropdown');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        servicesDropdown.addEventListener('click', (e) => {
+            if (window.innerWidth <= 900) {
+                servicesDropdown.classList.toggle('active');
+            }
+        });
+    </script>
 </body>
 </html>
