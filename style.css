@@ -1,341 +1,113 @@
-/* --- Global Styles & Colors --- */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', Arial, sans-serif;
-}
+/* --- Master Condensed Stylesheet for Steddy Plumbing --- */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', Arial, sans-serif; }
+body { color: #333; line-height: 1.6; background-color: #fff; }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; height: auto; display: block; }
 
-body {
-    color: #333333;
-    line-height: 1.6;
-    background-color: #ffffff;
-}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+/* Top Bar */
+.top-bar { background-color: #0b1c3f; color: #fff; padding: 10px 0; font-size: 14px; }
+.top-bar-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.top-contact a { color: #fff; margin-right: 15px; }
+.top-contact a:hover { color: #00A8E7; }
 
-/* --- Top Header Bar --- */
-.top-header {
-    background-color: #0b1c3f;
-    color: #ffffff;
-    padding: 8px 20px;
-    font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
+/* Navigation */
+.main-nav { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+.nav-flex { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; }
+.site-logo { max-height: 55px; width: auto; }
+.nav-links { list-style: none; display: flex; align-items: center; gap: 20px; }
+.nav-links a { font-weight: 600; color: #0b1c3f; font-size: 15px; text-transform: uppercase; transition: color 0.3s; }
+.nav-links a:hover, .nav-links a.active { color: #00A8E7; }
+.btn-estimate { background-color: #e63946; color: #fff !important; padding: 10px 20px; border-radius: 4px; }
+.menu-toggle { display: none; font-size: 24px; cursor: pointer; color: #0b1c3f; }
 
-.top-header a {
-    color: #00a8ff;
-    font-weight: bold;
-}
+/* Dropdown Sub-menu */
+.dropdown { position: relative; }
+.sub-menu { display: none; position: absolute; top: 100%; left: 0; background: #fff; min-width: 250px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); list-style: none; padding: 10px 0; z-index: 1001; }
+.sub-menu li a { padding: 8px 20px; font-size: 13px; text-transform: none; display: block; color: #333; }
+.sub-menu li a:hover { background: #f4f6f9; color: #00A8E7; }
+.dropdown:hover .sub-menu { display: block; }
 
-.top-header-right {
-    display: flex;
-    gap: 20px;
-}
+/* Hero */
+.hero-section { background: linear-gradient(rgba(11, 28, 63, 0.75), rgba(11, 28, 63, 0.75)), url('https://www.steddyplumbing.com/wp-content/uploads/2022/01/Group-560.png') center/cover; color: #fff; text-align: center; padding: 100px 20px; }
+.hero-content h2 { font-size: 35px; margin-bottom: 15px; font-weight: 700; }
+.hero-content h1 { font-size: 40px; margin-bottom: 25px; font-weight: 800; }
+.btn-red { background-color: #e63946; color: #fff; padding: 12px 30px; font-weight: bold; border-radius: 4px; display: inline-block; text-transform: uppercase; }
+.btn-red:hover { background-color: #c92a37; }
 
-/* --- Main Navigation Bar --- */
-.main-nav {
-    background: #ffffff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+/* Sections */
+.section-padding { padding: 60px 20px; }
+.intro-section { background-color: #0b1c3f; color: #fff; }
+.intro-flex { max-width: 900px; text-align: center; }
+.intro-flex p { font-size: 18px; margin-bottom: 20px; }
 
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
+.why-us-section { background: #f9f9f9; text-align: center; }
+.why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; align-items: center; }
+.why-grid h2 { color: #0b1c3f; font-size: 28px; }
+.feature-box { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.feature-box h3 { color: #00A8E7; font-size: 36px; margin-bottom: 10px; }
 
-.site-logo img {
-    max-height: 65px;
-    width: auto;
-}
+.services-header-section { padding: 40px 20px 20px 20px; background: #fff; }
+.subtitle-tag { color: #0b1c3f; font-weight: bold; text-transform: uppercase; font-size: 24px; margin-bottom: 10px; }
+.main-desc { font-size: 18px; color: #555; }
 
-/* Desktop Menu Links */
-.nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
+.services-grid-section { padding: 20px 20px 60px 20px; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.service-card { background: #0b1c3f; color: #fff; padding: 35px 20px; text-align: center; border-radius: 6px; font-size: 20px; font-weight: bold; transition: background 0.3s; }
+.service-card a { color: #fff; display: block; }
+.service-card:hover { background: #00A8E7; }
 
-.nav-links li {
-    position: relative;
-}
+.solution-section { background: #f4f6f9; }
+.solution-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.solution-text h3 { font-size: 30px; color: #0b1c3f; margin-bottom: 15px; }
+.highlight-title { font-size: 20px; font-weight: bold; color: #00A8E7; margin-bottom: 15px; }
 
-.nav-links a {
-    font-weight: 700;
-    font-size: 15px;
-    color: #0b1c3f;
-    text-transform: uppercase;
-    padding: 10px 0;
-    display: block;
-    transition: color 0.3s;
-}
+.coupons-section { background: #fff; }
+.coupon-subtext { margin-bottom: 30px; font-size: 16px; color: #666; }
+.coupons-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
 
-.nav-links a:hover, .nav-links a.active {
-    color: #00a8ff;
-}
+.expectations-section { background: #0b1c3f; color: #fff; }
+.expectations-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.expectations-flex h2 { font-size: 32px; margin-bottom: 20px; color: #00A8E7; }
 
-/* Dropdown Menu for Services */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #ffffff;
-    min-width: 260px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    border-radius: 4px;
-    list-style: none;
-    padding: 10px 0;
-    z-index: 1001;
-}
+.testimonials-section { background: #fff; }
+.testimonials-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.testimonial-slider-wrapper { background: #f9f9f9; padding: 30px; border-radius: 8px; border-left: 5px solid #00A8E7; }
+.testimonial-box { display: none; }
+.testimonial-box.active { display: block; }
+.testimonial-box p { font-size: 16px; font-style: italic; margin-bottom: 15px; color: #444; }
 
-.dropdown-menu li a {
-    padding: 10px 20px;
-    font-size: 14px;
-    color: #333333;
-    text-transform: none;
-    font-weight: 500;
-}
+.social-bar { background: #f4f6f9; padding: 30px 20px; }
+.social-flex { display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px; }
 
-.dropdown-menu li a:hover {
-    background-color: #f4f6f9;
-    color: #00a8ff;
-}
+.contact-banner { background: #fff; }
+.contact-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.form-wrapper { background: #f9f9f9; padding: 35px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+.form-wrapper h3 { font-size: 28px; color: #0b1c3f; margin-bottom: 20px; }
+.clean-form input, .clean-form select, .clean-form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; font-size: 15px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
 
-.has-dropdown:hover .dropdown-menu {
-    display: block;
-}
+/* Footer */
+.main-footer { background-color: #0b1c3f; color: #fff; padding-top: 60px; }
+.footer-top-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-bottom: 40px; border-bottom: 1px solid #1a2f5a; }
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; padding: 40px 0; }
+.footer-logo { max-height: 45px; margin-bottom: 15px; }
+.footer-grid h4 { color: #00A8E7; margin-bottom: 15px; text-transform: uppercase; }
+.footer-grid ul { list-style: none; }
+.footer-grid ul li { margin-bottom: 8px; }
+.footer-grid ul li a:hover { color: #00A8E7; }
+.hours-grid { display: grid; grid-template-columns: 1fr 1fr; font-size: 13px; color: #ccc; margin-top: 15px; }
+.footer-bottom { background: #071228; padding: 20px 0; font-size: 13px; color: #888; }
+.footer-bottom-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.footer-bottom-flex a { color: #888; }
+.footer-bottom-flex a:hover { color: #fff; }
 
-/* CTA Header Button */
-.header-btn {
-    background-color: #e63946;
-    color: #ffffff !important;
-    padding: 10px 20px !important;
-    border-radius: 4px;
-    text-transform: uppercase;
-}
-
-.header-btn:hover {
-    background-color: #c92a37;
-}
-
-/* --- Mobile Hamburger Menu Icon --- */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-}
-
-.hamburger span {
-    height: 3px;
-    width: 100%;
-    background-color: #0b1c3f;
-    border-radius: 2px;
-}
-
-/* --- Hero Banner --- */
-.hero-banner {
-    background: linear-gradient(rgba(11, 28, 63, 0.75), rgba(11, 28, 63, 0.75)), 
-                url('https://www.steddyplumbing.com/images/Steddy-Plumbing-LLC-in-Spring-TX-Plumbing-BG1.jpg') no-repeat center center/cover;
-    color: #ffffff;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero-banner h1 {
-    font-size: 42px;
-    font-weight: 800;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-.hero-banner p {
-    font-size: 20px;
-    max-width: 800px;
-    margin: 0 auto 30px auto;
-}
-
-.btn-primary {
-    display: inline-block;
-    background-color: #e63946;
-    color: #ffffff;
-    padding: 15px 35px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
-    text-transform: uppercase;
-    transition: background 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: #c92a37;
-}
-
-/* --- Content Sections --- */
-.section {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 32px;
-    color: #0b1c3f;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.section-subtitle {
-    text-align: center;
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 40px;
-}
-
-/* Services Grid */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-.service-box {
-    background: #ffffff;
-    border: 1px solid #e1e8ed;
-    border-top: 5px solid #00a8ff;
-    padding: 25px;
-    border-radius: 6px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.service-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.service-box h3 {
-    color: #0b1c3f;
-    font-size: 20px;
-    margin-bottom: 12px;
-}
-
-/* --- Footer --- */
-footer {
-    background-color: #0b1c3f;
-    color: #ffffff;
-    padding: 50px 20px 20px 20px;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
-}
-
-.footer-col h4 {
-    color: #00a8ff;
-    font-size: 18px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-.footer-col p, .footer-col ul {
-    font-size: 14px;
-    color: #cccccc;
-    list-style: none;
-}
-
-.footer-col ul li {
-    margin-bottom: 10px;
-}
-
-.footer-col ul li a:hover {
-    color: #ffffff;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #1a2f5a;
-    font-size: 13px;
-    color: #888888;
-}
-
-/* --- Mobile Responsiveness --- */
+/* Mobile Responsiveness */
 @media (max-width: 900px) {
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #ffffff;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        padding: 20px 0;
-        gap: 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-links a {
-        padding: 12px 20px;
-    }
-
-    .dropdown-menu {
-        position: static;
-        box-shadow: none;
-        background-color: #f8f9fa;
-        text-align: center;
-    }
-
-    .has-dropdown:hover .dropdown-menu {
-        display: none;
-    }
-
-    .has-dropdown.active .dropdown-menu {
-        display: block;
-    }
-
-    .hero-banner h1 {
-        font-size: 28px;
-    }
-
-    .top-header {
-        justify-content: center;
-        gap: 10px;
-        text-align: center;
-    }
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 20px; }
+    .nav-links.active { display: flex; }
+    .menu-toggle { display: block; }
+    .solution-flex, .expectations-flex, .testimonials-flex, .contact-flex, .form-row { grid-template-columns: 1fr; }
+    .sub-menu { position: static; box-shadow: none; background: #f4f6f9; }
 }
