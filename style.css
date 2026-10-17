@@ -1,15 +1,15 @@
-/* --- Global Styles & Reset --- */
+/* --- Global Styles & Colors --- */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
 }
 
 body {
-    color: #333;
+    color: #333333;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
 }
 
 a {
@@ -17,28 +17,32 @@ a {
     color: inherit;
 }
 
-/* --- Top Bar --- */
-.top-bar {
-    background-color: #1a252f;
-    color: #fff;
-    padding: 10px 20px;
+/* --- Top Header Bar --- */
+.top-header {
+    background-color: #0b1c3f;
+    color: #ffffff;
+    padding: 8px 20px;
+    font-size: 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
     flex-wrap: wrap;
-    gap: 10px;
 }
 
-.top-bar a {
-    color: #f1c40f;
+.top-header a {
+    color: #00a8ff;
     font-weight: bold;
 }
 
-/* --- Header & Navigation --- */
-header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.top-header-right {
+    display: flex;
+    gap: 20px;
+}
+
+/* --- Main Navigation Bar --- */
+.main-nav {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -50,160 +54,288 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #1a252f;
+.site-logo img {
+    max-height: 65px;
+    width: auto;
 }
 
-.logo span {
-    color: #e74c3c;
-}
-
+/* Desktop Menu Links */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links li {
+    position: relative;
 }
 
 .nav-links a {
-    font-weight: bold;
-    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    color: #0b1c3f;
+    text-transform: uppercase;
+    padding: 10px 0;
+    display: block;
     transition: color 0.3s;
 }
 
 .nav-links a:hover, .nav-links a.active {
-    color: #e74c3c;
+    color: #00a8ff;
 }
 
-/* --- Hero Section --- */
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/plumbing-bg.jpg') no-repeat center center/cover;
-    color: white;
+/* Dropdown Menu for Services */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 260px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 1001;
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #333333;
+    text-transform: none;
+    font-weight: 500;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f4f6f9;
+    color: #00a8ff;
+}
+
+.has-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* CTA Header Button */
+.header-btn {
+    background-color: #e63946;
+    color: #ffffff !important;
+    padding: 10px 20px !important;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.header-btn:hover {
+    background-color: #c92a37;
+}
+
+/* --- Mobile Hamburger Menu Icon --- */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 100%;
+    background-color: #0b1c3f;
+    border-radius: 2px;
+}
+
+/* --- Hero Banner --- */
+.hero-banner {
+    background: linear-gradient(rgba(11, 28, 63, 0.75), rgba(11, 28, 63, 0.75)), 
+                url('https://www.steddyplumbing.com/images/Steddy-Plumbing-LLC-in-Spring-TX-Plumbing-BG1.jpg') no-repeat center center/cover;
+    color: #ffffff;
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 
-.hero h1 {
-    font-size: 36px;
+.hero-banner h1 {
+    font-size: 42px;
+    font-weight: 800;
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 25px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+.hero-banner p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
 }
 
-/* --- Buttons --- */
-.btn {
+.btn-primary {
     display: inline-block;
-    background-color: #e74c3c;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
+    background-color: #e63946;
+    color: #ffffff;
+    padding: 15px 35px;
+    font-size: 18px;
     font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
     transition: background 0.3s;
 }
 
-.btn:hover {
-    background-color: #c0392b;
+.btn-primary:hover {
+    background-color: #c92a37;
 }
 
-/* --- Main Content Layout --- */
-.container {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
+/* --- Content Sections --- */
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .section-title {
     text-align: center;
-    font-size: 28px;
-    margin-bottom: 30px;
-    color: #1a252f;
+    font-size: 32px;
+    color: #0b1c3f;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
-/* --- Services Grid --- */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+.section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
     margin-bottom: 40px;
 }
 
-.service-card {
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    border-top: 4px solid #e74c3c;
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
-.service-card h3 {
-    margin-bottom: 10px;
-    color: #1a252f;
+.service-box {
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-top: 5px solid #00a8ff;
+    padding: 25px;
+    border-radius: 6px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.service-box h3 {
+    color: #0b1c3f;
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
 /* --- Footer --- */
 footer {
-    background-color: #1a252f;
-    color: white;
-    padding: 40px 20px 20px;
-    margin-top: 60px;
+    background-color: #0b1c3f;
+    color: #ffffff;
+    padding: 50px 20px 20px 20px;
 }
 
-.footer-content {
-    max-width: 1100px;
+.footer-container {
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .footer-col h4 {
+    color: #00a8ff;
+    font-size: 18px;
     margin-bottom: 15px;
-    color: #f1c40f;
+    text-transform: uppercase;
 }
 
 .footer-col p, .footer-col ul {
     font-size: 14px;
-    color: #bbb;
+    color: #cccccc;
     list-style: none;
 }
 
 .footer-col ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .footer-col ul li a:hover {
-    color: white;
+    color: #ffffff;
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid #34495e;
+    border-top: 1px solid #1a2f5a;
     font-size: 13px;
-    color: #888;
+    color: #888888;
 }
 
-/* --- Mobile Responsiveness Adjustments --- */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Can be enhanced with mobile toggle JS if desired, or simplified for a 5-page site */
+/* --- Mobile Responsiveness --- */
+@media (max-width: 900px) {
+    .hamburger {
+        display: flex;
     }
-    .hero h1 {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+        gap: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 12px 20px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background-color: #f8f9fa;
+        text-align: center;
+    }
+
+    .has-dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    .has-dropdown.active .dropdown-menu {
+        display: block;
+    }
+
+    .hero-banner h1 {
         font-size: 28px;
     }
-    .top-bar {
+
+    .top-header {
         justify-content: center;
+        gap: 10px;
         text-align: center;
     }
 }
