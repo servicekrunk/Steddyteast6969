@@ -1,113 +1,112 @@
-/* --- Master Condensed Stylesheet for Steddy Plumbing --- */
-* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', Arial, sans-serif; }
-body { color: #333; line-height: 1.6; background-color: #fff; }
+/* --- Professional Master Stylesheet for Steddy Plumbing --- */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+body { color: #333; background-color: #fff; line-height: 1.6; }
 a { text-decoration: none; color: inherit; }
 img { max-width: 100%; height: auto; display: block; }
-
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.text-center { text-align: center; }
 
-/* Top Bar */
-.top-bar { background-color: #0b1c3f; color: #fff; padding: 10px 0; font-size: 14px; }
+/* Top Header Bar */
+.top-bar { background-color: #0b1c3f; color: #fff; padding: 10px 0; font-size: 13px; }
 .top-bar-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-.top-contact a { color: #fff; margin-right: 15px; }
-.top-contact a:hover { color: #00A8E7; }
+.top-contacts a { color: #fff; margin-left: 20px; }
+.top-contacts a:hover { color: #00A8E7; }
 
-/* Navigation */
-.main-nav { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
-.nav-flex { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; }
-.site-logo { max-height: 55px; width: auto; }
-.nav-links { list-style: none; display: flex; align-items: center; gap: 20px; }
-.nav-links a { font-weight: 600; color: #0b1c3f; font-size: 15px; text-transform: uppercase; transition: color 0.3s; }
+/* Sticky Main Navigation */
+.main-header { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+.nav-flex { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+.brand-logo { max-height: 55px; width: auto; }
+.nav-links { list-style: none; display: flex; align-items: center; gap: 25px; }
+.nav-links a { font-weight: 600; color: #0b1c3f; font-size: 14px; text-transform: uppercase; transition: color 0.3s; }
 .nav-links a:hover, .nav-links a.active { color: #00A8E7; }
 .btn-estimate { background-color: #e63946; color: #fff !important; padding: 10px 20px; border-radius: 4px; }
 .menu-toggle { display: none; font-size: 24px; cursor: pointer; color: #0b1c3f; }
 
-/* Dropdown Sub-menu */
+/* Dropdown Menu */
 .dropdown { position: relative; }
-.sub-menu { display: none; position: absolute; top: 100%; left: 0; background: #fff; min-width: 250px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); list-style: none; padding: 10px 0; z-index: 1001; }
+.sub-menu { display: none; position: absolute; top: 100%; left: 0; background: #fff; min-width: 260px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); list-style: none; padding: 10px 0; z-index: 1001; }
 .sub-menu li a { padding: 8px 20px; font-size: 13px; text-transform: none; display: block; color: #333; }
 .sub-menu li a:hover { background: #f4f6f9; color: #00A8E7; }
 .dropdown:hover .sub-menu { display: block; }
 
-/* Hero */
-.hero-section { background: linear-gradient(rgba(11, 28, 63, 0.75), rgba(11, 28, 63, 0.75)), url('https://www.steddyplumbing.com/wp-content/uploads/2022/01/Group-560.png') center/cover; color: #fff; text-align: center; padding: 100px 20px; }
-.hero-content h2 { font-size: 35px; margin-bottom: 15px; font-weight: 700; }
-.hero-content h1 { font-size: 40px; margin-bottom: 25px; font-weight: 800; }
-.btn-red { background-color: #e63946; color: #fff; padding: 12px 30px; font-weight: bold; border-radius: 4px; display: inline-block; text-transform: uppercase; }
+/* Hero Section */
+.hero-section { background: linear-gradient(rgba(11,28,63,0.75), rgba(11,28,63,0.75)), url('https://www.steddyplumbing.com/wp-content/uploads/2022/01/Group-560.png') center/cover; color: #fff; text-align: center; padding: 110px 20px; }
+.hero-sub { font-size: 24px; font-weight: 600; margin-bottom: 10px; color: #00A8E7; }
+.hero-section h1 { font-size: 42px; font-weight: 800; max-width: 900px; margin: 0 auto 30px auto; }
+.btn-red { background-color: #e63946; color: #fff; padding: 14px 32px; font-weight: bold; border-radius: 4px; display: inline-block; text-transform: uppercase; }
 .btn-red:hover { background-color: #c92a37; }
 
-/* Sections */
-.section-padding { padding: 60px 20px; }
-.intro-section { background-color: #0b1c3f; color: #fff; }
-.intro-flex { max-width: 900px; text-align: center; }
-.intro-flex p { font-size: 18px; margin-bottom: 20px; }
+/* Intro Section */
+.intro-section { background-color: #0b1c3f; color: #fff; padding: 70px 20px; text-align: center; }
+.intro-container { max-width: 850px; }
+.intro-container h2 { font-size: 32px; font-weight: 700; margin-bottom: 25px; color: #fff; }
+.intro-container p { font-size: 17px; line-height: 1.8; margin-bottom: 20px; color: #e1e8ed; }
 
-.why-us-section { background: #f9f9f9; text-align: center; }
-.why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; align-items: center; }
-.why-grid h2 { color: #0b1c3f; font-size: 28px; }
-.feature-box { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-.feature-box h3 { color: #00A8E7; font-size: 36px; margin-bottom: 10px; }
+/* Why Choose Us */
+.why-section { background: #f9f9f9; padding: 60px 20px; text-align: center; }
+.why-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; align-items: center; }
+.why-title { font-size: 28px; color: #0b1c3f; text-align: left; font-weight: 700; }
+.why-card { background: #fff; padding: 35px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+.why-card h3 { font-size: 36px; color: #00A8E7; margin-bottom: 10px; font-weight: 800; }
 
-.services-header-section { padding: 40px 20px 20px 20px; background: #fff; }
-.subtitle-tag { color: #0b1c3f; font-weight: bold; text-transform: uppercase; font-size: 24px; margin-bottom: 10px; }
-.main-desc { font-size: 18px; color: #555; }
+/* Services */
+.services-wrapper { padding: 60px 20px; background: #fff; }
+.section-tag { font-size: 22px; font-weight: bold; color: #0b1c3f; display: block; margin-bottom: 10px; text-transform: uppercase; }
+.section-desc { font-size: 18px; color: #555; margin-bottom: 40px; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.service-box { background: #0b1c3f; color: #fff; padding: 35px 20px; border-radius: 6px; font-size: 20px; font-weight: 700; transition: background 0.3s; }
+.service-box a { color: #fff; display: block; }
+.service-box:hover { background: #00A8E7; }
 
-.services-grid-section { padding: 20px 20px 60px 20px; }
-.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-.service-card { background: #0b1c3f; color: #fff; padding: 35px 20px; text-align: center; border-radius: 6px; font-size: 20px; font-weight: bold; transition: background 0.3s; }
-.service-card a { color: #fff; display: block; }
-.service-card:hover { background: #00A8E7; }
+/* Tailor Section */
+.tailor-section { background: #f4f6f9; padding: 70px 20px; }
+.tailor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+.tailor-grid h2 { font-size: 32px; color: #0b1c3f; margin-bottom: 15px; font-weight: 700; }
+.sub-headline { font-size: 18px; color: #00A8E7; font-weight: 600; margin-bottom: 20px; }
+.tailor-grid p { color: #555; font-size: 16px; line-height: 1.8; }
 
-.solution-section { background: #f4f6f9; }
-.solution-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-.solution-text h3 { font-size: 30px; color: #0b1c3f; margin-bottom: 15px; }
-.highlight-title { font-size: 20px; font-weight: bold; color: #00A8E7; margin-bottom: 15px; }
+/* Coupons */
+.coupon-section { padding: 70px 20px; background: #fff; }
+.coupon-subtitle { color: #666; font-size: 16px; margin-bottom: 40px; }
+.coupon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
 
-.coupons-section { background: #fff; }
-.coupon-subtext { margin-bottom: 30px; font-size: 16px; color: #666; }
-.coupons-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+/* Expectations */
+.expectations-section { background: #0b1c3f; color: #fff; padding: 70px 20px; }
+.expectations-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+.section-tag-light { font-size: 20px; font-weight: bold; color: #00A8E7; display: block; margin-bottom: 15px; text-transform: uppercase; }
+.expectations-grid h2 { font-size: 32px; margin-bottom: 20px; font-weight: 700; }
+.expectations-grid p { font-size: 16px; line-height: 1.8; color: #ccc; }
 
-.expectations-section { background: #0b1c3f; color: #fff; }
-.expectations-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-.expectations-flex h2 { font-size: 32px; margin-bottom: 20px; color: #00A8E7; }
+/* Testimonials */
+.testimonial-section { padding: 70px 20px; background: #fff; }
+.testimonial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+.testimonial-box-wrapper { background: #f9f9f9; padding: 40px; border-radius: 8px; border-left: 5px solid #00A8E7; }
+.testimonial-card { display: none; }
+.testimonial-card.active { display: block; }
+.testimonial-card p { font-size: 16px; font-style: italic; color: #444; margin-bottom: 20px; line-height: 1.8; }
 
-.testimonials-section { background: #fff; }
-.testimonials-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-.testimonial-slider-wrapper { background: #f9f9f9; padding: 30px; border-radius: 8px; border-left: 5px solid #00A8E7; }
-.testimonial-box { display: none; }
-.testimonial-box.active { display: block; }
-.testimonial-box p { font-size: 16px; font-style: italic; margin-bottom: 15px; color: #444; }
-
+/* Social Bar */
 .social-bar { background: #f4f6f9; padding: 30px 20px; }
 .social-flex { display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px; }
 
-.contact-banner { background: #fff; }
-.contact-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-.form-wrapper { background: #f9f9f9; padding: 35px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-.form-wrapper h3 { font-size: 28px; color: #0b1c3f; margin-bottom: 20px; }
-.clean-form input, .clean-form select, .clean-form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; font-size: 15px; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-
 /* Footer */
-.main-footer { background-color: #0b1c3f; color: #fff; padding-top: 60px; }
-.footer-top-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-bottom: 40px; border-bottom: 1px solid #1a2f5a; }
-.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; padding: 40px 0; }
+.site-footer { background-color: #0b1c3f; color: #fff; padding-top: 60px; }
+.footer-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-bottom: 40px; border-bottom: 1px solid #1a2f5a; }
+.footer-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; padding: 50px 0; }
 .footer-logo { max-height: 45px; margin-bottom: 15px; }
-.footer-grid h4 { color: #00A8E7; margin-bottom: 15px; text-transform: uppercase; }
-.footer-grid ul { list-style: none; }
-.footer-grid ul li { margin-bottom: 8px; }
-.footer-grid ul li a:hover { color: #00A8E7; }
-.hours-grid { display: grid; grid-template-columns: 1fr 1fr; font-size: 13px; color: #ccc; margin-top: 15px; }
+.footer-columns h4 { color: #00A8E7; margin-bottom: 15px; text-transform: uppercase; }
+.footer-columns ul { list-style: none; }
+.footer-columns ul li { margin-bottom: 10px; }
+.footer-columns ul li a:hover { color: #00A8E7; }
 .footer-bottom { background: #071228; padding: 20px 0; font-size: 13px; color: #888; }
 .footer-bottom-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-.footer-bottom-flex a { color: #888; }
-.footer-bottom-flex a:hover { color: #fff; }
 
-/* Mobile Responsiveness */
+/* Mobile Menu & Responsiveness */
 @media (max-width: 900px) {
     .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 20px; }
     .nav-links.active { display: flex; }
     .menu-toggle { display: block; }
-    .solution-flex, .expectations-flex, .testimonials-flex, .contact-flex, .form-row { grid-template-columns: 1fr; }
+    .why-grid, .tailor-grid, .expectations-grid, .testimonial-grid { grid-template-columns: 1fr; }
+    .why-title { text-align: center; }
     .sub-menu { position: static; box-shadow: none; background: #f4f6f9; }
 }
