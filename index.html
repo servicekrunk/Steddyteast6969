@@ -5,69 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steddy Plumbing, LLC | 5-Star Plumbers in Spring, TX</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Top Contact Bar -->
-    <div class="top-bar">
-        <span>📍 Spring, TX & Surrounding Areas | RMP 37946</span>
-        <span>📞 Call Us: <a href="tel:2819184077">(281) 918-4077</a></span>
+    <!-- Top Bar -->
+    <div class="top-header">
+        <div>📍 Serving Spring, TX & Surrounding Areas | License: RMP 37946</div>
+        <div class="top-header-right">
+            <span>✉️ freddy@steddyplumbing.com</span>
+            <span>📞 <a href="tel:2819184077">(281) 918-4077</a></span>
+        </div>
     </div>
 
-    <!-- Header / Navigation -->
-    <header>
+    <!-- Main Navigation Header -->
+    <header class="main-nav">
         <div class="nav-container">
-            <div class="logo">Steddy<span>Plumbing</span></div>
-            <ul class="nav-links">
+            <a href="index.html" class="site-logo">
+                <img src="https://www.steddyplumbing.com/images/Steddy-Plumbing-LLC-in-Spring-TX-Logo.png" alt="Steddy Plumbing LLC Logo">
+            </a>
+
+            <!-- Mobile Hamburger Menu Button -->
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-dropdown" id="services-dropdown">
+                    <a href="services.html">Services ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">Drain Cleaning</a></li>
+                        <li><a href="services.html">Water Heater</a></li>
+                        <li><a href="services.html">Tankless Water Heater</a></li>
+                        <li><a href="services.html">Water Treatment</a></li>
+                        <li><a href="services.html">Sewer Line Repair & Replacement</a></li>
+                        <li><a href="services.html">Gas Line Repair & Replacement</a></li>
+                        <li><a href="services.html">Residential Plumbing</a></li>
+                        <li><a href="services.html">Sewer Camera Inspection</a></li>
+                        <li><a href="services.html">Toilets, Sinks & Faucets</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tel:2819184077" class="header-btn">Free Estimates</a></li>
             </ul>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Hero Banner -->
+    <section class="hero-banner">
         <h1>Steady Service. Solid Solutions.</h1>
-        <p>Local, affordable, and fully licensed plumbers serving Spring, The Woodlands, Houston, Conroe, Tomball, and Cypress.</p>
-        <a href="tel:2819184077" class="btn">Call For A Free Estimate</a>
+        <p>Local, affordable, and fully licensed plumbers serving Spring, The Woodlands, Houston, Conroe, Tomball, and Cypress, TX.</p>
+        <a href="tel:2819184077" class="btn-primary">Call For A Service</a>
     </section>
 
-    <!-- Content Section -->
-    <div class="container">
-        <h2 class="section-title">Welcome to Steddy Plumbing LLC</h2>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px auto;">
-            We are a family-owned and operated plumbing company dedicated to top-quality plumbing solutions at a competitive price. Proudly serving our neighborhoods since 2018 with a 100% customer satisfaction guarantee!
-        </p>
-
-        <h2 class="section-title">Our Core Services</h2>
+    <!-- Main Content -->
+    <section class="section">
+        <h2 class="section-title">Local, Affordable Plumbers in Spring, TX</h2>
+        <p class="section-subtitle">Family-owned and operated since 2018. Fully licensed and insured for your peace of mind.</p>
+        
+        <h2 class="section-title" style="margin-top: 50px;">Our Featured Services</h2>
         <div class="services-grid">
-            <div class="service-card">
+            <div class="service-box">
                 <h3>Drain Cleaning</h3>
-                <p>Fast, reliable clearing for clogged sinks, showers, and main sewer lines.</p>
+                <p>Reliable and efficient drain clearing for kitchen sinks, bathrooms, and main sewer drain lines.</p>
             </div>
-            <div class="service-card">
-                <h3>Water Heaters</h3>
-                <p>Expert repair and replacement for standard tank and high-efficiency tankless water heaters.</p>
+            <div class="service-box">
+                <h3>Water Heater Services</h3>
+                <p>Expert inspection, repair, and installation for standard tank and tankless water heaters.</p>
             </div>
-            <div class="service-card">
+            <div class="service-box">
                 <h3>Residential Plumbing</h3>
-                <p>From leaky faucets and running toilets to complete home repiping.</p>
+                <p>Full-service plumbing fixes including leaky faucets, toilets, pipes, and fixture installations.</p>
             </div>
         </div>
-        <div style="text-align: center;">
-            <a href="services.html" class="btn" style="background-color: #1a252f;">View All Services</a>
-        </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
+        <div class="footer-container">
             <div class="footer-col">
-                <h4>Steddy Plumbing, LLC</h4>
-                <p>License Number: RMP 37946</p>
-                <p>Family owned and operated since 2018.</p>
+                <img src="https://www.steddyplumbing.com/images/Steddy-Plumbing-LLC-in-Spring-TX-Top-Family-Plumbing-Logo1.png" alt="Steddy Plumbing Footer Logo" style="max-height: 50px; margin-bottom: 15px;">
+                <p>LICENSE NUMBER: RMP 37946</p>
+                <p>Steady Service. Solid Solutions. That's Steddy Plumbing!</p>
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
@@ -80,9 +104,9 @@
             </div>
             <div class="footer-col">
                 <h4>Contact Info</h4>
-                <p>Phone: (281) 918-4077</p>
-                <p>Email: freddy@steddyplumbing.com</p>
-                <p>Address: 21522 Glenbranch Dr, Spring, TX 77388</p>
+                <p>📞 (281) 918-4077</p>
+                <p>✉️ freddy@steddyplumbing.com</p>
+                <p>📍 21522 Glenbranch Dr, Spring, TX 77388</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -90,5 +114,21 @@
         </div>
     </footer>
 
+    <!-- JavaScript for Mobile Hamburger & Dropdown Functionality -->
+    <script>
+        const hamburger = document.getElementById('hamburger-menu');
+        const navLinks = document.getElementById('nav-links');
+        const servicesDropdown = document.getElementById('services-dropdown');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        servicesDropdown.addEventListener('click', (e) => {
+            if (window.innerWidth <= 900) {
+                servicesDropdown.classList.toggle('active');
+            }
+        });
+    </script>
 </body>
 </html>
