@@ -115,20 +115,29 @@
     </footer>
 
     <!-- JavaScript for Mobile Hamburger & Dropdown Functionality -->
-    <script>
-        const hamburger = document.getElementById('hamburger-menu');
-        const navLinks = document.getElementById('nav-links');
-        const servicesDropdown = document.getElementById('services-dropdown');
+    <!-- JavaScript for Mobile Hamburger & Dropdown -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var hamburger = document.getElementById('hamburger-menu');
+        var navLinks = document.getElementById('nav-links');
+        var servicesDropdown = document.getElementById('services-dropdown');
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', function(e) {
+                e.stopPropagation();
+                navLinks.classList.toggle('active');
+            });
+        }
 
-        servicesDropdown.addEventListener('click', (e) => {
-            if (window.innerWidth <= 900) {
-                servicesDropdown.classList.toggle('active');
-            }
-        });
-    </script>
+        if (servicesDropdown) {
+            servicesDropdown.addEventListener('click', function(e) {
+                if (window.innerWidth <= 900) {
+                    servicesDropdown.classList.toggle('active');
+                }
+            });
+        }
+    });
+</script>
+
 </body>
 </html>
